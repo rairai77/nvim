@@ -9,3 +9,5 @@ vim.g.mapleader = " "
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+vim.keymap.set("n", "<leader>wh", ":split<cr>", {desc="horizontal split"})
+vim.keymap.set("n", "<leader>wv", ":vsplit<cr>", {desc="vertical split"})
