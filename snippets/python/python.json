@@ -1,0 +1,9 @@
+{
+    "HELLO": {
+        "prefix": "hello",
+        "body": [
+            "hello world"
+        ],
+        "description": "Hello World"
+    }
+}

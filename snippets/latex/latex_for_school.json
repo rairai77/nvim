@@ -1,0 +1,20 @@
+{
+    "\\begin{part}": {
+        "prefix": "part",
+        "body": [
+            "\\\\begin{part}",
+            "\t$0",
+            "\\\\end{part}"
+        ],
+        "description": "Begin and end Part" 
+    },
+    "\\begin{question}": {
+        "prefix": "question",
+        "body": [
+            "\\\\begin{question}{$1}",
+            "\t$0",
+            "\\\\end{question}"
+        ],
+        "description": "Begin and end Question" 
+    }
+}
