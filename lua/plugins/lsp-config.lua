@@ -15,7 +15,8 @@ return {
 					"pyright",
 					"emmet_language_server",
 					"gopls",
-                    "texlab"
+                    "texlab",
+                    "clangd"
 				},
 			})
 		end,
@@ -33,6 +34,7 @@ return {
 			lspconfig.bashls.setup(opts)
 			lspconfig.pyright.setup(opts)
             lspconfig.texlab.setup(opts)
+            lspconfig.clangd.setup(opts)
 			lspconfig.emmet_language_server.setup({
 				filetypes = {
 					"css",
@@ -95,9 +97,9 @@ return {
 					vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
 					vim.keymap.set("n", "<leader>wa", vim.lsp.buf.add_workspace_folder, opts)
 					vim.keymap.set("n", "<leader>wr", vim.lsp.buf.remove_workspace_folder, opts)
-					vim.keymap.set("n", "<leader>wl", function()
+					vim.keymap.set("n", "<leader>wL", function()
 						print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-					end, opts)
+					end, opts, {desc="list workspaces"})
 					vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, opts)
 					vim.keymap.set({ "n", "v" }, "<space>ca", vim.lsp.buf.code_action, opts)
 					vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
