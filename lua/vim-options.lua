@@ -8,7 +8,7 @@ vim.g.mapleader = " "
 --[[ sets line numbers ]]--
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.autochdir = true
+vim.opt.autochdir = false
 --[[ im not entirely sure what this does but it makes things nicer ]]--
 vim.opt.conceallevel = 1
 --[[ window commands ]]--
