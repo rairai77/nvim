@@ -35,6 +35,10 @@ return {
 			lspconfig.pyright.setup(opts)
 			lspconfig.texlab.setup(opts)
 			lspconfig.clangd.setup(opts)
+			lspconfig.hls.setup({
+				filetypes = { "haskell", "lhaskell", "cabal" },
+				capabilities = capabilities,
+			})
 			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
 				settings = {
